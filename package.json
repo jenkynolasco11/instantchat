@@ -1,0 +1,44 @@
+{
+  "name": "instant-chat",
+  "version": "1.0.0",
+  "description": "\"Instant chat for costumer support on regular websites\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkynolasco11/instantchat.git"
+  },
+  "author": "Jenky Nolasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenkynolasco11/instantchat/issues"
+  },
+  "homepage": "https://github.com/jenkynolasco11/instantchat#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "dotenv": "^4.0.0",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.1",
+    "redux": "^3.6.0",
+    "socketio": "^1.0.0"
+  }
+}
