@@ -1,26 +1,14 @@
-import { Component } from 'react'
-import { bindActionCreators } from 'redux'
-import { connect } from 'react-redux'
+import React/*, { Component }*/ from 'react'
+import ChatMessages from './ChatMessages.jsx'
+import ChatText from './ChatText.jsx'
 
-import { deleteMessage, sendMessage } from '../actions'
-
-class Chat extends Component {
-  render(){
-    return (<h1> Hola </h1>)
-  }
+const Chat = () =>{
+  return (
+    <div className='chat'>
+      <ChatMessages />
+      <ChatText />
+    </div>
+  )
 }
 
-const mapStateToProps = ( state ) => {
-  return {
-    messages : state.messages
-  }
-}
-
-const mapDispatchToProps = ( dispatch ) => {
-  return bindActionCreators({
-    sendMessage,
-    deleteMessage
-  }, dispatch)
-}
-
-export default connect( mapStateToProps, mapDispatchToProps )(Chat)
+export default Chat

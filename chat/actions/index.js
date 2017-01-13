@@ -11,3 +11,10 @@ export const deleteMessage = (ind) => {
     payload : ind
   }
 }
+
+export const onChangeText = (text) => {
+  return {
+    type : 'TYPING',
+    payload : text
+  }
+}
