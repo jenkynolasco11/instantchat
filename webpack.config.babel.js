@@ -1,6 +1,6 @@
 // es6
 import webpack from 'webpack'
-import path from 'path'
+import { join } from 'path'
 import nodeExternals from 'webpack-node-externals'
 
 // var webpack = require('webpack');
@@ -14,12 +14,14 @@ export default {
   // devtool : 'inline-source-map',
   entry : [
     // './products/MainComponent.jsx'
+    './chat/index.jsx'
   ],
   output : {
-    path : path.join(__dirname,'public/js'),
+    path : join(__dirname,'public/js'),
     filename : 'bundle.js',
     // libraryTarget : 'commonjs2'
   },
+  // debug : true,
   // target : 'node',
   // externals : [nodeExternals()],
   // resolve : {

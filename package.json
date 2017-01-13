@@ -4,6 +4,8 @@
   "description": "\"Instant chat for costumer support on regular websites\"",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon --exec babel-node app.js -e .js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
